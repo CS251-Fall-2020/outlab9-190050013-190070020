@@ -1,6 +1,7 @@
 package com.example.newsapp;
 
 import android.util.Log;
+import android.widget.TextView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,6 +14,22 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.os.StrictMode;
+import android.util.Log;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 
 public class FetchArticles implements Runnable {
     private Thread t;
@@ -58,6 +75,7 @@ public class FetchArticles implements Runnable {
             }
             String xx = response.toString();
             System.out.println(xx);*/
+            //TextView t = (TextView)findViewById(R.id.HelloWorld);
 
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -66,21 +84,21 @@ public class FetchArticles implements Runnable {
             Log.d("FETCH ARTICLES Starting GET","Starting GET");
 
 
-            URL url = new URL("http://newsapi.org/v2/top-headlines?language=en&apiKey=c922f99970f1465183e05d64ed0ca123");
+            //URL url = new URL("http://newsapi.org/v2/top-headlines?language=en&apiKey=c922f99970f1465183e05d64ed0ca123");
+            URL url = new URL("https://newsapi.org/v2/top-headlines?language=en&apiKey=c922f99970f1465183e05d64ed0ca123");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-            HttpURLConnection con =
-                    (HttpURLConnection) url.openConnection();
+
 
             con.setRequestMethod("GET");
-            con.setDoOutput(true);
-            con.setDoInput(true);
-            con.setRequestProperty("Content-Type", "application/json");
-            con.setRequestProperty("Accept", "application/json");
+            //con.setRequestProperty("Content-Type", "application/json");
+            //con.setRequestProperty("Accept", "application/json");
 
             con.connect();
 
             String responseCode = String.valueOf(con.getResponseCode());
             String responseMessage = con.getResponseMessage();
+            //t.setText("Response Code = " + responseCode + ", Response Message = " + responseMessage);
 
             Log.d("FETCH ARTICLES RESPONSE CODE",responseCode);
             Log.d("FETCH ARTICLES RESPONSE MESSAGE",responseMessage);
@@ -114,9 +132,6 @@ public class FetchArticles implements Runnable {
             }
         }
         catch (IOException e){
-            e.printStackTrace();
-        }
-        catch (FileNotFoundException e){
             e.printStackTrace();
         }
     }

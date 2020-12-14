@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/HelloWorld"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -14,5 +15,217 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/headline_list_margin"
+            android:background="@color/headlines_background"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+                <TextView
+                    android:id="@+id/headline1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/headlines_background">
+
+
+                <TextView
+                    android:id="@+id/headline10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/headline_margin"
+                    android:ems="10"
+                    android:background="@color/headlines_background"
+                    android:text="@string/news_title_place_holder"
+                    android:textColor="@color/headline_text_color"
+                    android:textSize="@dimen/headline_text_size" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
