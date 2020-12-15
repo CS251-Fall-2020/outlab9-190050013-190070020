@@ -1,0 +1,3 @@
+https://developer.android.com/reference/java/net/HttpURLConnection
+https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1?endpoint=apiendpoint_2bef1167-41a0-4a2c-9b49-4be435bf94c5
+https://developer.android.com/reference/android/widget/TextView
